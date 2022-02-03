@@ -8,14 +8,23 @@ namespace TicTacGame
 {
     internal class TicTacToeGame
     {
-        public string Player1 {get;set;}
-        public  string player2 { get;set;}
+        public char Player1 {get;set;}
+        public  char player2 { get;set;}
         
         public void DispalyTicTacToeGame()
         {
-            this.Player1 = "X";
-            this.player2 = "O";
-            Console.WriteLine(this.Player1, this.player2);
+            Console.WriteLine("Enter the player characcter X or O");
+            char s=Convert.ToChar(Console.ReadLine());
+            switch (s)
+            {
+                case 'X':
+                    this.Player1 = s;
+                    break;
+                case 'O':
+                    this.player2 = s;
+                    break ;
+            }
+            Console.WriteLine(this.Player1+" "+this.player2);
         }
     }
 }
