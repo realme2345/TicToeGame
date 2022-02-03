@@ -8,17 +8,14 @@ namespace TicTacGame
 {
     internal class TicTacToeGame
     {
-       
-        char[] arr = new char[10];
+        public string Player1 {get;set;}
+        public  string player2 { get;set;}
+        
         public void DispalyTicTacToeGame()
         {
-            for (int i= 1; i<10;i++)
-            {
-                foreach(char c in arr)
-                {
-                    Console.WriteLine(c);
-                }
-            }
+            this.Player1 = "X";
+            this.player2 = "O";
+            Console.WriteLine(this.Player1, this.player2);
         }
     }
 }
