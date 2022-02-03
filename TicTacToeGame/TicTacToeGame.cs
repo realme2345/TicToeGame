@@ -13,11 +13,9 @@ namespace TicTacGame
         {
             for (int i = 1; i < 10; i++)
             {
-                foreach (char c in arr)
-                {
-                    Console.WriteLine(c);
-                }
+                arr[i] = ' ';
             }
+
         }
         public char player1 {get;set;}
         public  char computer { get;set;}
@@ -35,6 +33,18 @@ namespace TicTacGame
                 this.computer = s;
             }
             Console.WriteLine(this.player1+" "+this.computer);
+        }
+        public void DispalyBoard()
+        {
+            Console.WriteLine("     |     |      ");
+            Console.WriteLine("  {0}  |  {1}  |  {2}", arr[1], arr[2], arr[3]);
+            Console.WriteLine("_____|_____|_____ ");
+            Console.WriteLine("     |     |      ");
+            Console.WriteLine("  {0}  |  {1}  |  {2}", arr[4], arr[5], arr[6]);
+            Console.WriteLine("_____|_____|_____ ");
+            Console.WriteLine("     |     |      ");
+            Console.WriteLine("  {0}  |  {1}  |  {2}", arr[7], arr[8], arr[9]);
+            Console.WriteLine("     |     |      ");
         }
     }
 }

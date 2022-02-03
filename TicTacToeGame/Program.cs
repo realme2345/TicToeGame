@@ -12,6 +12,8 @@ namespace TicTacGame
         {
             TicTacToeGame game = new TicTacToeGame();
             game.DispalyTicTacToeGame();
+            game.DispalyPlayer();
+            game.Board();
         }
     }
 }
