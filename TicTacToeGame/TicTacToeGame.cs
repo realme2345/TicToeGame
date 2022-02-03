@@ -19,23 +19,23 @@ namespace TicTacGame
                 }
             }
         }
-        public char Player1 {get;set;}
-        public  char player2 { get;set;}
+        public char player1 {get;set;}
+        public  char computer { get;set;}
         
         public void DispalyPlayer()
         {
-            Console.WriteLine("Enter the player characcter X or O");
+            Console.WriteLine("Enter the player character X or O");
             char s=Convert.ToChar(Console.ReadLine());
             switch (s)
             {
                 case 'X':
-                    this.Player1 = s;
+                    this.player1 = s;
                     break;
                 case 'O':
-                    this.player2 = s;
+                    this.computer = s;
                     break ;
             }
-            Console.WriteLine(this.Player1+" "+this.player2);
+            Console.WriteLine(this.player1+" "+this.computer);
         }
     }
 }
