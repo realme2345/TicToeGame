@@ -26,14 +26,13 @@ namespace TicTacGame
         {
             Console.WriteLine("Enter the player character X or O");
             char s=Convert.ToChar(Console.ReadLine());
-            switch (s)
+            if (s == 'X')
             {
-                case 'X':
-                    this.player1 = s;
-                    break;
-                case 'O':
-                    this.computer = s;
-                    break ;
+                this.player1 = s;
+            }
+            else
+            {
+                this.computer = s;
             }
             Console.WriteLine(this.player1+" "+this.computer);
         }
